@@ -1,0 +1,43 @@
+<main class="container m-auto pt-32">
+    <div class="h-screen">
+        <div class="flex flex-col items-center">
+            <h1 class="text-3xl font-bold">Divulgue a vaga preenchendo o formulário</h1>
+            <h2>Preencha os dados da melhor possível para encontrar mais rápido seu dev!</h2>
+        </div>
+        <div class="w-1/2 m-auto pt-8">
+            <form action="/jobs/add" method="post" class="grid grid-cols-2 grid-rows-5 gap-4">
+                <div class="form-control">
+                    <label class="input-group input-group-vertical">
+                        <span>Título</span>
+                        <input type="text" name="title" placeholder="Desenvolvedor full-stack" class="input input-bordered" required/>
+                    </label>
+                </div>
+                <div class="form-control">
+                    <label class="input-group input-group-vertical">
+                        <span>Empresa contratante</span>
+                        <input type="text" name="company" placeholder="Job finder" class="input input-bordered" required>
+                    </label>
+                </div>
+                <div class="form-control">
+                    <label class="input-group input-group-vertical">
+                        <span>Contato</span>
+                        <input type="text" name="email" placeholder="Job.finder@company.com.br" class="input input-bordered" required>
+                    </label>
+                </div>
+                <div class="form-control">
+                    <label class="input-group input-group-vertical">
+                        <span>Salário</span>
+                        <input type="text" name="salary" placeholder="R$10.000,00" class="input input-bordered" required>
+                    </label>
+                </div>
+                <div class="form-control col-span-2 row-span-4">
+                    <label class="input-group input-group-vertical">
+                        <span>Descrição</span>
+                        <textarea type="text" name="description" placeholder="Descreva as atividades do desenvolvedor" class="input input-bordered resize-none h-60" required></textarea>
+                    </label>
+                </div>  
+                <button type="submit" class="btn btn-primary text col-span-2">Encontre agora!</button>
+            </form>
+        </div>
+    </div>
+</main>

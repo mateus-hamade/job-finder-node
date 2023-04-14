@@ -1,0 +1,56 @@
+<div class="hero min-h-screen" id="top-container" style="background-image: url(/img/banner2.jpg);">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Encontre o emprego do seus sonhos!</h1>
+                <p class="mb-5">Somos a plataforma com mais vagas de tecnologia no mercado, direcionadas a home-office.</p>
+        
+                <form action="/" method="get" class="flex flex-col space-y-3 items-center">
+                    <div class="form-control w-full max-w-xs">
+                        <input type="text" name="job" placeholder="Digite o cargo" class="input input-bordered w-full max-w-xs text-[#333C4D]" />
+                    </div>
+                    <button type="submit" class="btn btn-active btn-primary">Encontre agora!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<main id="jobs-main">
+    <div class="container m-auto mt-10 flex flex-col items-center" id="jobs-container">
+        <article class="prose lg:prose-xl">
+            {{#if search}}
+                <h2>Veja os resultados para "{{search}}"</h2>
+            {{else}}
+                <h2>Veja as nossas vagas em destaque!</h2>
+            {{/if}}
+
+            <ul class="divide-y">                
+                {{#each jobs}}
+                <li class="pb-3 sm:pb-4 hover:transform hover:scale-105 duration-300">
+                    <a href="/{{dataValues.id}}" class="cursor-pointer no-underline no-">
+                        <div class="flex items-center space-x-4">
+                            <div class="flex-shrink-0">
+                                <img class="w-8 h-8 rounded-full" src="/img/company.svg">
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-medium truncate">
+                                    {{dataValues.title}}
+                                </h3>
+                                <p class="text-sm truncate">
+                                    {{dataValues.company}}
+                                </p>
+                                <p class="text-sm truncate">
+                                    {{dataValues.email}}
+                                </p>
+                            </div>
+                            <div class="inline-flex items-center text-base font-semibold">
+                                R${{dataValues.salary}},00  
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                {{/each}}
+            </ul>
+        </article>
+    </div>
+</main>
