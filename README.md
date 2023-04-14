@@ -18,6 +18,7 @@
 >> npm install body-parser
 >> npm install sequelize
 >> npm install sqlite3
+>> npm install -D nodemon
 >> npm install -D tailwindcss
 ```
 
