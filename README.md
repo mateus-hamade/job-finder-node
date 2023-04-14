@@ -26,3 +26,7 @@
 ```
 >> npm run dev
 ```
+### Imagens do projeto 📷
+![image](public/img/readme/screenshot(1).png)
+![image](public/img/readme/screenshot(2).png)
+![image](public/img/readme/screenshot(3).png)
