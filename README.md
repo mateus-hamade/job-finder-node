@@ -7,7 +7,7 @@
 ### Ferramentas utilizadas 🛠️
 - Html
 - Nodejs, Javascript
-- Daisyui, tailwindcss, Css
+- <a href="https://tailwindcss.com/">Tailwindcss</a>, <a href="https://daisyui.com/">DaisyUI</a>, Css
 
 ### Executando o código
 - Instalando os modulos 📚
